@@ -1,0 +1,12 @@
+fastapi
+uvicorn[standard]
+httpx
+beautifulsoup4
+lxml
+pandas
+numpy
+matplotlib
+Pillow
+python-docx
+PyPDF2
+PyYAML
