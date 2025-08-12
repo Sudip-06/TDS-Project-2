@@ -43,7 +43,8 @@ MAX_JOINED_TEXT  = int(os.getenv("MAX_JOINED_TEXT", "10000"))
 MAX_TOK_PLAN     = int(os.getenv("MAX_TOK_PLAN", "500"))
 MAX_TOK_PROCESS  = int(os.getenv("MAX_TOK_PROCESS", "900"))
 
-os.makedirs("data", exist_ok=True)
+DATA_DIR = os.getenv("DATA_DIR", "/tmp/data")  # <- use /tmp, not ./data
+os.makedirs(DATA_DIR, exist_ok=True)
 
 # =========================
 # FastAPI app + shared client
