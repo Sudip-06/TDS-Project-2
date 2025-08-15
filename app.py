@@ -29,7 +29,7 @@ from contextlib import asynccontextmanager
 # =========================
 
 OPENROUTER_URL   = os.getenv("OPENROUTER_URL", "https://aipipe.org/openrouter/v1/chat/completions")
-OPENROUTER_TOKEN = os.getenv("GITHUB_TOKEN", "eyJhbGciOiJIUzI1NiJ9.eyJlbWFpbCI6InNhbmppdGRlOTczNDc4MzI0OEBnbWFpbC5jb20ifQ.PytI6sXfDuHsJzzgzYBS_a0bPorEfD3u-lThn9vRhmc")  # <-- put your real token here or in env
+OPENROUTER_TOKEN = os.getenv("GITHUB_TOKEN", "")  # <-- put your real token here or in env
 
 MODEL_SCRAPE     = os.getenv("MODEL_SCRAPE",  "openai/gpt-5-mini")
 MODEL_PROCESS    = os.getenv("MODEL_PROCESS", "openai/gpt-4o")
