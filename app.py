@@ -507,10 +507,10 @@ async def api(
     # legacy single-field prompt file
     question: Optional[UploadFile] = File(default=None, alias="question.txt"),
     # legacy multiple files
-    files: List[UploadFile] = File(default=[], alias="files"),
+    files1: List[UploadFile] = File(default=[], alias="files"),
 
-    files: List[UploadFile] = File(default=[], alias="image.png"),
-    files: List[UploadFile] = File(default=[], alias="data.csv"),
+    files2: List[UploadFile] = File(default=[], alias="image.png"),
+    files3: List[UploadFile] = File(default=[], alias="data.csv"),
    
     # NEW: support curl -F "file=@x" repeated
     files_generic: List[UploadFile] = File(default=[], alias="file"),
