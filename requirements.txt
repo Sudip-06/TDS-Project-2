@@ -10,3 +10,9 @@ Pillow
 python-docx
 PyPDF2
 PyYAML
+
+
+
+
+pypdf
+python-multipart
